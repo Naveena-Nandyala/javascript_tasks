@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var temperature = 30;
+      let result =
+        temperature > 30
+          ? "Hot"
+          : temperature >= 20 && temperature <= 30
+          ? "Warm"
+          : temperature >= 10 && temperature <= 19
+          ? "Cool"
+          : temperature < 10
+          ? "Cold"
+          : "Not Valid";
+      console.log(result);
+
+      var temperature1 = 40;
+      let result1 =
+        temperature1 > 30
+          ? "Hot"
+          : temperature1 >= 20 && temperature1 <= 30
+          ? "Warm"
+          : temperature1 >= 10 && temperature1 <= 19
+          ? "Cool"
+          : temperature1 < 10
+          ? "Cold"
+          : "Not Valid";
+      console.log(result1);
+    </script>
+    <img src="./Picture5.png" />
+  </body>
+</html>

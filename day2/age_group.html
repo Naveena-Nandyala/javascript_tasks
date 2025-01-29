@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Group</title>
+    <style>
+      img {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var age = 24;
+      let result =
+        age >= 0 && age <= 12
+          ? "Child"
+          : age >= 13 && age <= 19
+          ? "Teen"
+          : age >= 20 && age <= 64
+          ? "Adult"
+          : age >= 65
+          ? "Senior"
+          : "Not a Number";
+      console.log(result);
+
+      var age1 = 80;
+      let result1 =
+        age1 >= 0 && age1 <= 12
+          ? "Child"
+          : age1 >= 13 && age1 <= 19
+          ? "Teen"
+          : age1 >= 20 && age1 <= 64
+          ? "Adult"
+          : age1 >= 65
+          ? "Senior"
+          : "Not a Number";
+      console.log(result1);
+    </script>
+    <img src="./Picture6.png" />
+  </body>
+</html>
