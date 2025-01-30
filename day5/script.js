@@ -9,7 +9,19 @@ console.log("Reverse of a String : " + rev);
 
 //Task2: Find Evensum and Oddsum
 
-var arr = [1, 2, 3, 4, 5, 6];
+var arr = [23, 54, 67, 64, 46, 95, 98];
+console.log("Even Numbers: ");
+for (i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 == 0) {
+    console.log(arr[i]);
+  }
+}
+console.log("Odd Numbers: ");
+for (i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 != 0) {
+    console.log(arr[i]);
+  }
+}
 evensum = 0;
 oddsum = 0;
 for (i = 0; i <= arr.length - 1; i++) {
