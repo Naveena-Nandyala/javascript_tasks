@@ -66,7 +66,7 @@ console.log(
 const colors = ["Red", "Pink", "Blue", "White", "Black", "Green"];
 
 console.log("colors[1]: " + colors[1]);
-console.log("colos[3]: " + colors[3]);
+console.log("colors[3]: " + colors[3]);
 
 //Javascript Functions: A function is a block of code designed to perform a particular task.
 function myFunction(p1, p2) {
