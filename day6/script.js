@@ -1,29 +1,20 @@
-// let numbers = Array.from({ length: 30 }, (_, i) => i + 1);
-// for (value in numbers) {
-//   console.log(numbers[value]);
-// }
+var prime = prompt("Enter a Number");
+console.log("Print Prime Numbers between 1 and " + prime);
 
-// for (i in range(1, 31));
-// {
-//   console.log(i);
-// }
-
-// var num = Array.from({ length: 30 }, (_, i) => i + 1);
-// for (value in num) {
-//   console.log(num[value]);
-// }
-
-// for (index of num) {
-//   console.log(index);
-// }
-
-var numbers = Array.from({ length: 30 }, (_, i) => i + 1);
-console.log("Using for - in loop");
-for (const values in numbers) {
-  console.log(numbers[values]);
+function primeNumbers(num) {
+  for (let i = 1; i <= num; i++) {
+    if (isPrime(i)) {
+      console.log(i);
+    }
+  }
 }
 
-console.log("Using for - of loop");
-for (const index of numbers) {
-  console.log(index);
+function isPrime(n) {
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return n > 1;
 }
+primeNumbers(prime);
